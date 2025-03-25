@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
-            
+
             SizedBox(height: 25),
 
             // Card -> how do you feel?
@@ -78,9 +78,9 @@ class _HomePageState extends State<HomePage> {
                         borderRadius: BorderRadius.circular(12),
                       ),
                     ),
-                    
+
                     SizedBox(width: 20),
-                    
+
                     // How do you feel + get started button
                     Expanded(
                       child: Column(
@@ -90,19 +90,16 @@ class _HomePageState extends State<HomePage> {
                             'How do you feel?',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              fontSize: 16,
+                              fontSize: 18,
                             ),
                           ),
                           SizedBox(height: 8),
-                          Text('Fill out your medical card right now',
-                          style: TextStyle(fontSize: 14
-                            ),
-                          ),
+                          Text('Fill out your medical card right now.'),
                           SizedBox(height: 12),
                           Container(
                             padding: EdgeInsets.all(12),
                             decoration: BoxDecoration(
-                              color: Colors.deepPurple,
+                              color: Colors.deepPurple[300],
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: Center(
@@ -122,6 +119,20 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
+
+            SizedBox(height: 25),
+
+            // Search bar
+            Container(
+              decoration: BoxDecoration(color: Colors.deepPurple[100]),
+              child: TextField(
+                decoration: InputDecoration(
+                  border: InputBorder.none,
+                ),
+              ),
+            ),
+
+            // horizontal listview -> dentist, surgeon, etc..
           ],
         ),
       ),
