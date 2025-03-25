@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
 import 'package:medicalappui/util/category_card.dart';
 import 'package:medicalappui/util/doctor_card.dart';
 
@@ -123,22 +122,25 @@ class _HomePageState extends State<HomePage> {
             SizedBox(height: 25),
 
             // Search bar
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 25.0),
-              child: Container(
-                padding: EdgeInsets.all(12),
-                decoration: BoxDecoration(
-                  color: Colors.deepPurple[100],
-                ),
-                child: TextField(
-                  decoration: InputDecoration(
-                    prefixIcon: Icon(Icons.search),
-                    border: InputBorder.none,
-                    hintText: 'How can we help you?',
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                child: Container(
+                  padding: EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: Colors.deepPurple[100],
+                    borderRadius: BorderRadius.circular(25), // Membuat sudut rounded
+                  ),
+                  child: TextField(
+                    decoration: InputDecoration(
+                      prefixIcon: Icon(Icons.search, size: 24), // Ukuran ikon lebih serasi
+                      border: InputBorder.none,
+                      hintText: 'How can we help you?',
+                      contentPadding: EdgeInsets.symmetric(vertical: 15), // Sejajarkan teks dengan ikon
+                    ),
                   ),
                 ),
               ),
-            ),
+
 
             SizedBox(height: 25),
 
@@ -208,7 +210,7 @@ class _HomePageState extends State<HomePage> {
                     DoctorCard(
                       doctorImagePath: 'lib/images/doctor2.jpg',
                       rating: '4.7',
-                      doctorName: 'Dr. Kimi Maulana',
+                      doctorName: 'Dr. Andrew Smith',
                       doctorProfession: 'Psychologist',
                     ),
                     DoctorCard(
