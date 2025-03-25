@@ -126,6 +126,7 @@ class _HomePageState extends State<HomePage> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 25.0),
               child: Container(
+                padding: EdgeInsets.all(12),
                 decoration: BoxDecoration(
                   color: Colors.deepPurple[100],
                   ),
