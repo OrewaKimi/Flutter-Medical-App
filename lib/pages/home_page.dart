@@ -163,7 +163,22 @@ class _HomePageState extends State<HomePage> {
                 ),
                 ],
               )
-            )
+            ),
+
+          SizedBox(height: 25),
+
+            // Doctor list
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 25.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text('Top Doctors'),
+                  Text('See all'),              
+                     ],
+              ),
+            ),
+
           ],
         ),
       ),
