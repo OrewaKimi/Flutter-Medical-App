@@ -48,6 +48,7 @@ class _HomePageState extends State<HomePage> {
                   padding: EdgeInsets.all(12),
                   decoration: BoxDecoration(
                     color: Colors.deepPurple[100],
+                    borderRadius: BorderRadius.circular(12)
                   ),
                   child: Icon(Icons.person),
                   ),
@@ -55,7 +56,40 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           
-          // Additional widgets can be added here
+          SizedBox(height: 25),
+
+          // Card -> how do you feel?
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 25.0),
+            child: Container(
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(color: Colors.pink[100]),
+              child: Row(children: [
+                // Animation or cute picture
+            Container(
+              height: 100,
+              width: 100,
+              color: Colors.deepPurple,
+            ),
+                // How do you feel + get started button
+                Column(
+                  children: [
+                    Text('How do you feel'),
+                    Text('Fill Out your medical card right now'),
+                    Container(
+                      child: Center(
+                        child: Center(
+                          child: Text('Get Sarted'),
+                        ),
+                      )
+                    )
+                  ],
+                )
+            
+              ],),
+            ),
+          )
+
         ],
       ),
     ),);
