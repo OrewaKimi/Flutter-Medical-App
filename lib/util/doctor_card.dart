@@ -22,8 +22,9 @@ class DoctorCard extends StatelessWidget {
             height: 100,
             ),
         ),
-        SizedBox(
-          height: 10),
+          SizedBox(
+          height: 10,
+          ),
       
             // Rating Out Of 5
             Row(
@@ -34,8 +35,12 @@ class DoctorCard extends StatelessWidget {
               ],
             ),
 
+          SizedBox(
+          height: 10,
+          ),
+
             // Doctor Name
-            Text('Dr. Arle McCoy'),
+            Text('Dr. Arlene McCoy'),
       
             // Doctor Title
             Text('Therapist, 7 y.e.'),
