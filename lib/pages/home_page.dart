@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medicalappui/util/category_card.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -148,18 +149,18 @@ class _HomePageState extends State<HomePage> {
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
-                  Container(
-                    color: Colors.deepPurple[100],
-                    child: Row(
-                       children: [
-                      Image.asset('lib/icons/tooth.png',
-                      height: 40,
-                      ),
-                        Text('Dentist'),
-                      ],
-                    ),
-                  ),
-                  
+                CategoryCard(
+                  categoryName: 'Dentist',
+                  iconImagePath: 'lib/icons/tooth.png',
+                ),
+                CategoryCard(
+                  categoryName: 'Surgeon',
+                  iconImagePath: 'lib/icons/surgeon.png',
+                ),
+                CategoryCard(
+                  categoryName: 'PHarmacist',
+                  iconImagePath: 'lib/icons/medicine.png',
+                ),
                 ],
               )
             )
