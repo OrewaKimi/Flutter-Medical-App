@@ -173,9 +173,22 @@ class _HomePageState extends State<HomePage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text('Top Doctors'),
-                  Text('See all'),              
-                     ],
+                  Text(
+                    'Top Doctors',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
+                  ),
+                  Text(
+                    'See all',
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.grey[500],
+                    ),
+                  ),
+                ],
               ),
             ),
 
