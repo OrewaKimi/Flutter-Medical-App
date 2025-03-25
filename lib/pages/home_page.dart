@@ -73,12 +73,12 @@ class _HomePageState extends State<HomePage> {
                 child: Row(
                   children: [
                     // Animation or cute picture
-                    Container(
-                      height: 100,
-                      width: 100,
-                        child: Lottie.network('https://lottie.host/253dc760-591c-4fdf-8880-8fe666320ae4/G1YW8js9Ud.lotti',),
-                    ),
-
+                   Container(
+                    height: 100,
+                    width: 100,
+                    child: Image.asset('lib/icons/prescription.png'),
+                  ),
+        
                     SizedBox(width: 20),
 
                     // How do you feel + get started button
