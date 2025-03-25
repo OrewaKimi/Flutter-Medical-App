@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:medicalappui/util/category_card.dart';
+import 'package:medicalappui/util/doctor_card.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -194,32 +195,16 @@ class _HomePageState extends State<HomePage> {
 
             SizedBox(height: 25),
 
-            Container(
-              color: Colors.deepPurple[100],
-              child: Column(
+            Expanded(child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+              child: ListView(
+                scrollDirection: Axis.horizontal,
                 children: [
-                  // Picture Of Doctor
-                  Image.asset(
-                    'lib/images/doctor1png',
-                    height: 40,
-                  ),
-
-                  // Rating Out Of 5
-                  Row(
-                    children: [
-                      Icon(Icons.star),
-                      Text('4.9'),
-                    ],
-                  ),
-
-                  // Doctor Name
-                  Text('Dr. Arle McCoy'),
-
-                  // Doctor Title
-                  Text('Therapist, 7 y.e.'),
+                  DoctorCard(),
                 ],
-              )
-            )
+              ),
+            )),
+
           ],
         ),
       ),
