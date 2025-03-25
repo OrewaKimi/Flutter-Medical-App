@@ -24,8 +24,14 @@ class DoctorCard extends StatelessWidget {
       ),
       
             // Rating Out Of 5
-            Row(children: [Icon(Icons.star), Text('4.9')]),
-      
+            Row(
+              children: [Icon(Icons.star,
+              color: Colors.yellow[600],
+              ),
+              Text('4.9'),
+              ],
+            ),
+
             // Doctor Name
             Text('Dr. Arle McCoy'),
       
