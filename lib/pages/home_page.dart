@@ -159,7 +159,7 @@ class _HomePageState extends State<HomePage> {
                     iconImagePath: 'lib/icons/surgeon.png',
                   ),
                   CategoryCard(
-                    categoryName: 'PHarmacist',
+                    categoryName: 'Pharmacist',
                     iconImagePath: 'lib/icons/medicine.png',
                   ),
                 ],
