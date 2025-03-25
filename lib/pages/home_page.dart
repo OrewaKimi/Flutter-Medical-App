@@ -195,6 +195,7 @@ class _HomePageState extends State<HomePage> {
             SizedBox(height: 25),
 
             Container(
+              color: Colors.deepPurple[100],
               child: Column(
                 children: [
                   // Picture Of Doctor
@@ -210,10 +211,12 @@ class _HomePageState extends State<HomePage> {
                       Text('4.9'),
                     ],
                   ),
-                  
+
                   // Doctor Name
+                  Text('Dr. Arle McCoy'),
 
                   // Doctor Title
+                  Text('Therapist, 7 y.e.'),
                 ],
               )
             )
