@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'package:medicalappui/util/category_card.dart';
 import 'package:medicalappui/util/doctor_card.dart';
 
@@ -75,10 +76,7 @@ class _HomePageState extends State<HomePage> {
                     Container(
                       height: 100,
                       width: 100,
-                      decoration: BoxDecoration(
-                        color: Colors.deepPurple,
-                        borderRadius: BorderRadius.circular(12),
-                      ),
+                        child: Lottie.network('https://lottie.host/253dc760-591c-4fdf-8880-8fe666320ae4/G1YW8js9Ud.lotti',),
                     ),
 
                     SizedBox(width: 20),
@@ -131,7 +129,7 @@ class _HomePageState extends State<HomePage> {
                 padding: EdgeInsets.all(12),
                 decoration: BoxDecoration(
                   color: Colors.deepPurple[100],
-                  ),
+                ),
                 child: TextField(
                   decoration: InputDecoration(
                     prefixIcon: Icon(Icons.search),
@@ -150,23 +148,23 @@ class _HomePageState extends State<HomePage> {
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
-                CategoryCard(
-                  categoryName: 'Dentist',
-                  iconImagePath: 'lib/icons/tooth.png',
-                ),
-                CategoryCard(
-                  categoryName: 'Surgeon',
-                  iconImagePath: 'lib/icons/surgeon.png',
-                ),
-                CategoryCard(
-                  categoryName: 'PHarmacist',
-                  iconImagePath: 'lib/icons/medicine.png',
-                ),
+                  CategoryCard(
+                    categoryName: 'Dentist',
+                    iconImagePath: 'lib/icons/tooth.png',
+                  ),
+                  CategoryCard(
+                    categoryName: 'Surgeon',
+                    iconImagePath: 'lib/icons/surgeon.png',
+                  ),
+                  CategoryCard(
+                    categoryName: 'PHarmacist',
+                    iconImagePath: 'lib/icons/medicine.png',
+                  ),
                 ],
-              )
+              ),
             ),
 
-          SizedBox(height: 25),
+            SizedBox(height: 25),
 
             // Doctor list
             Padding(
@@ -195,16 +193,34 @@ class _HomePageState extends State<HomePage> {
 
             SizedBox(height: 25),
 
-            Expanded(child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 8.0),
-              child: ListView(
-                scrollDirection: Axis.horizontal,
-                children: [
-                  DoctorCard(),
-                ],
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: [
+                    DoctorCard(
+                      doctorImagePath: 'lib/images/doctor1.jpg',
+                      rating: '4.9',
+                      doctorName: 'Dr. Ganesh',
+                      doctorProfession: 'Therapist',
+                    ),
+                    DoctorCard(
+                      doctorImagePath: 'lib/images/doctor2.jpg',
+                      rating: '4.7',
+                      doctorName: 'Dr. Kimi Maulana',
+                      doctorProfession: 'Psychologist',
+                    ),
+                    DoctorCard(
+                      doctorImagePath: 'lib/images/doctor3.jpg',
+                      rating: '4.6',
+                      doctorName: 'Dr. Steeve harvey',
+                      doctorProfession: 'Surgeon',
+                    ),
+                  ],
+                ),
               ),
-            )),
-
+            ),
           ],
         ),
       ),
