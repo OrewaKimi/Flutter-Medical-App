@@ -193,6 +193,20 @@ class _HomePageState extends State<HomePage> {
             ),
 
             SizedBox(height: 25),
+
+            Container(
+              child: Column(
+                children: [
+                  // Picture Of Doctor
+
+                  // Rating Out Of 5
+
+                  // Doctor Name
+
+                  // Doctor Title
+                ],
+              )
+            )
           ],
         ),
       ),
