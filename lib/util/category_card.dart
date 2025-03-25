@@ -6,7 +6,13 @@ class CategoryCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      
+      color: Colors.deepPurple[100],
+      child: Row(
+        children: [
+          Image.asset('lib/icons/tooth.png', height: 40),
+          Text('Dentist'),
+        ],
+      ),
     );
   }
 }
