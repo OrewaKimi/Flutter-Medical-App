@@ -198,9 +198,19 @@ class _HomePageState extends State<HomePage> {
               child: Column(
                 children: [
                   // Picture Of Doctor
+                  Image.asset(
+                    'lib/images/doctor1png',
+                    height: 40,
+                  ),
 
                   // Rating Out Of 5
-
+                  Row(
+                    children: [
+                      Icon(Icons.star),
+                      Text('4.9'),
+                    ],
+                  ),
+                  
                   // Doctor Name
 
                   // Doctor Title
