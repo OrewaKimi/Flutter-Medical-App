@@ -21,7 +21,9 @@ class DoctorCard extends StatelessWidget {
               child:Image.asset('lib/images/doctor1.jpg', 
             height: 100,
             ),
-      ),
+        ),
+        SizedBox(
+          height: 10),
       
             // Rating Out Of 5
             Row(
