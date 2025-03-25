@@ -123,11 +123,18 @@ class _HomePageState extends State<HomePage> {
             SizedBox(height: 25),
 
             // Search bar
-            Container(
-              decoration: BoxDecoration(color: Colors.deepPurple[100]),
-              child: TextField(
-                decoration: InputDecoration(
-                  border: InputBorder.none,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 25.0),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.deepPurple[100],
+                  ),
+                child: TextField(
+                  decoration: InputDecoration(
+                    prefixIcon: Icon(Icons.search),
+                    border: InputBorder.none,
+                    hintText: 'How can we help you?',
+                  ),
                 ),
               ),
             ),
