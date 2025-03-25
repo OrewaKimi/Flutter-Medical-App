@@ -140,7 +140,29 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
 
+            SizedBox(height: 25),
+
             // horizontal listview -> dentist, surgeon, etc..
+            Container(
+              height: 80,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  Container(
+                    color: Colors.deepPurple[100],
+                    child: Row(
+                       children: [
+                      Image.asset('lib/icons/tooth.png',
+                      height: 40,
+                      ),
+                        Text('Dentist'),
+                      ],
+                    ),
+                  ),
+                  
+                ],
+              )
+            )
           ],
         ),
       ),
