@@ -28,7 +28,8 @@ class DoctorCard extends StatelessWidget {
             // Picture Of Doctor
             ClipRRect(
               borderRadius: BorderRadius.circular(50),
-              child: Image.asset('lib/images/doctor1.jpg', height: 100),
+              child: Image.asset(doctorImagePath,
+               height: 100,),
             ),
             SizedBox(height: 10),
 
@@ -36,7 +37,9 @@ class DoctorCard extends StatelessWidget {
             Row(
               children: [
                 Icon(Icons.star, color: Colors.yellow[600]),
-                Text('4.9', style: TextStyle(fontWeight: FontWeight.bold)),
+                Text(
+                  rating, 
+                style: TextStyle(fontWeight: FontWeight.bold)),
               ],
             ),
 
@@ -44,14 +47,14 @@ class DoctorCard extends StatelessWidget {
 
             // Doctor Name
             Text(
-              'Dr. Arlene McCoy',
+              doctorName,
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
             ),
 
             SizedBox(height: 5),
 
             // Doctor Title
-            Text('Therapist, 7 y.e.'),
+            Text(doctorProfession + '7 y.e.'),
           ],
         ),
       ),
